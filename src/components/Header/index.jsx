@@ -1,17 +1,16 @@
-import React , { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { ReactComponent as MoonLightIcon } from '../../icons/moon-light.svg';
 import { ReactComponent as MoonDarkIcon } from '../../icons/moon-dark.svg';
 
 const Wrapper = styled.header`
   background: ${props => props.darkMode ? '#415465' : 'white'};
-  color: ${props => !props.darkMode ? '#415465' : 'white'};
-  height: 80px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  border-bottom: 0.1px solid #e9e9e9;
+  border-bottom: ${props => !props.darkMode && '1px solid #ececec'};
 `;
 
 const Logo = styled.h1`
@@ -40,9 +39,7 @@ const MoonLight = styled(MoonLightIcon)`
   margin: 0 5px;
 `;
 
-const Header = (props) => {
-  const [darkMode, setDarkMode] = useState(false);
-
+const Header = ({darkMode, setDarkMode}) => {
   return (
     <Wrapper darkMode={darkMode}>
       <Logo>
