@@ -13,13 +13,13 @@ const Wrapper = styled.div`
 `;
 
 const Body = styled.div`
-  height: calc(100vh - 71px);
+  min-height: calc(100vh - 71px);
   width: 80vw;
   margin: auto;
 `;
 
-const Center = styled.div`
-  height: inherit;
+const SpinerWrapper = styled.div`
+  height: calc(100vh - 71px);
   display: flex;
   justify-content: center;
   align-items:center;
@@ -38,9 +38,9 @@ function App() {
       <Body>
         {
           countries.length === 0 ?
-            <Center>
+            <SpinerWrapper>
               <Spiner />
-            </Center>
+            </SpinerWrapper>
           :
           <CoutryGrid
             countries={countries}
