@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/FlagApp/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/FlagApp/static/js/main.958d5759.chunk.js",
-    "main.js.map": "/FlagApp/static/js/main.958d5759.chunk.js.map",
+    "main.js": "/FlagApp/static/js/main.dbc46985.chunk.js",
+    "main.js.map": "/FlagApp/static/js/main.dbc46985.chunk.js.map",
     "runtime-main.js": "/FlagApp/static/js/runtime-main.d2980795.js",
     "runtime-main.js.map": "/FlagApp/static/js/runtime-main.d2980795.js.map",
-    "static/js/2.8dc2e215.chunk.js": "/FlagApp/static/js/2.8dc2e215.chunk.js",
-    "static/js/2.8dc2e215.chunk.js.map": "/FlagApp/static/js/2.8dc2e215.chunk.js.map",
+    "static/js/2.768c1d98.chunk.js": "/FlagApp/static/js/2.768c1d98.chunk.js",
+    "static/js/2.768c1d98.chunk.js.map": "/FlagApp/static/js/2.768c1d98.chunk.js.map",
     "index.html": "/FlagApp/index.html",
-    "precache-manifest.514074e8ae2928b30cb06196ef9a0d2d.js": "/FlagApp/precache-manifest.514074e8ae2928b30cb06196ef9a0d2d.js",
+    "precache-manifest.0a28256d6bc8ca4208d353ff13aa6a2e.js": "/FlagApp/precache-manifest.0a28256d6bc8ca4208d353ff13aa6a2e.js",
     "service-worker.js": "/FlagApp/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/FlagApp/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.8dc2e215.chunk.js.LICENSE.txt": "/FlagApp/static/js/2.8dc2e215.chunk.js.LICENSE.txt",
+    "static/js/2.768c1d98.chunk.js.LICENSE.txt": "/FlagApp/static/js/2.768c1d98.chunk.js.LICENSE.txt",
     "static/media/moon-dark.39b498bf.svg": "/FlagApp/static/media/moon-dark.39b498bf.svg",
     "static/media/moon-light.7dd9cc71.svg": "/FlagApp/static/media/moon-light.7dd9cc71.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d2980795.js",
-    "static/js/2.8dc2e215.chunk.js",
+    "static/js/2.768c1d98.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.958d5759.chunk.js"
+    "static/js/main.dbc46985.chunk.js"
   ]
 }
