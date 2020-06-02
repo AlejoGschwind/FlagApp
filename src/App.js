@@ -5,6 +5,7 @@ import CoutryGrid from './components/CountryGrid';
 
 import axios from 'axios';
 import Spiner from './components/Spiner';
+import SearchInput from './components/SearchInput';
 
 const Wrapper = styled.div`
   background: ${props => props.darkMode ? '#344350' : 'white'};
@@ -16,6 +17,7 @@ const Body = styled.div`
   min-height: calc(100vh - 71px);
   width: 80vw;
   margin: auto;
+  padding: 0 2em;
 `;
 
 const SpinerWrapper = styled.div`
@@ -25,9 +27,18 @@ const SpinerWrapper = styled.div`
   align-items:center;
 `;
 
+const FlitersWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+`;
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [search, setSearch] = useState('');
   const countries = useCountries();
+
+  const filteredCountries = countries.filter((country) => country.name.toLowerCase().startsWith(search.toLowerCase()))
 
   return (
     <Wrapper className="App" darkMode={darkMode}>
@@ -42,10 +53,19 @@ function App() {
               <Spiner />
             </SpinerWrapper>
           :
-          <CoutryGrid
-            countries={countries}
-            darkMode={darkMode}
-          />
+            <>
+              <FlitersWrapper>
+                <SearchInput
+                  search={search}
+                  setSearch={setSearch}
+                  darkMode={darkMode}
+                />
+              </FlitersWrapper>
+              <CoutryGrid
+                countries={filteredCountries}
+                darkMode={darkMode}
+              />
+            </>
         }
       </Body>
     </Wrapper>

@@ -10,7 +10,7 @@ const Wrapper = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  border-bottom: ${props => !props.darkMode && '1px solid #ececec'};
+  border-bottom: ${props => props.darkMode ? '1px solid #415465' : '1px solid #ececec'};
 `;
 
 const Logo = styled.h1`

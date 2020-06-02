@@ -3,7 +3,10 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   height: 350px;
-  border: ${props => !props.darkMode && '1px solid #eaeced'};
+  border: ${props => props.darkMode ? '1px solid #415465' :'1px solid #eaeced'};
+  -webkit-box-shadow: 17px 54px 161px -100px rgba(72,74,84,1);
+  -moz-box-shadow: 17px 54px 161px -100px rgba(72,74,84,1);
+  box-shadow: 17px 54px 161px -100px rgba(72,74,84,1);
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;

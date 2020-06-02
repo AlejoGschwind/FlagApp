@@ -8,7 +8,6 @@ const Wrapper = styled.div`
   justify-content: center;
   grid-column-gap: 80px;
   grid-row-gap: 2.3em;
-  padding: 3em 0;
 `;
 
 const CoutryGrid = ({countries, darkMode}) => {
