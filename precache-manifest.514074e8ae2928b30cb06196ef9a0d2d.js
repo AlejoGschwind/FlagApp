@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c95827628c6a22ea8f371ed79f570a3",
+    "revision": "b727c2158fc165fb4da5193f1cc1ea55",
     "url": "/FlagApp/index.html"
   },
   {
-    "revision": "1f641438a324aa49dfd1",
+    "revision": "742b3e3037c16c272881",
     "url": "/FlagApp/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "84f72829084943a19737",
-    "url": "/FlagApp/static/js/2.2931f975.chunk.js"
+    "revision": "f33515b95219533c41c3",
+    "url": "/FlagApp/static/js/2.8dc2e215.chunk.js"
   },
   {
     "revision": "4ba1a1c11c57ed15aa68008707a3d6b4",
-    "url": "/FlagApp/static/js/2.2931f975.chunk.js.LICENSE.txt"
+    "url": "/FlagApp/static/js/2.8dc2e215.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1f641438a324aa49dfd1",
-    "url": "/FlagApp/static/js/main.57a3fd02.chunk.js"
+    "revision": "742b3e3037c16c272881",
+    "url": "/FlagApp/static/js/main.958d5759.chunk.js"
   },
   {
     "revision": "96b42816f39bf5091f28",
