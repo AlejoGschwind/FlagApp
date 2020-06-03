@@ -4,10 +4,10 @@ import CountryCard from '../CountryCard';
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
-  justify-content: center;
-  grid-column-gap: 80px;
-  grid-row-gap: 2.3em;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-column-gap: 4rem;
+  grid-row-gap: 2rem;
 `;
 
 const CoutryGrid = ({countries, darkMode}) => {

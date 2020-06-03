@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactGA from 'react-ga';
 import styled from 'styled-components';
 import Header from './components/Header';
 import CoutryGrid from './components/CountryGrid';
@@ -6,6 +7,7 @@ import CoutryGrid from './components/CountryGrid';
 import axios from 'axios';
 import Spiner from './components/Spiner';
 import SearchInput from './components/SearchInput';
+import SelectInput from './components/SelectInput';
 
 const Wrapper = styled.div`
   background: ${props => props.darkMode ? '#344350' : 'white'};
@@ -29,16 +31,24 @@ const SpinerWrapper = styled.div`
 
 const FlitersWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1em 0;
+  height: 80px;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [search, setSearch] = useState('');
+  const [filter, setFilter] = useState("");
   const countries = useCountries();
 
-  const filteredCountries = countries.filter((country) => country.name.toLowerCase().startsWith(search.toLowerCase()))
+  const filteredCountries = countries
+    .filter(country => country.region === filter || filter === "")
+    .filter(country => country.name.toLowerCase().startsWith(search.toLowerCase()))
 
   return (
     <Wrapper className="App" darkMode={darkMode}>
@@ -60,6 +70,11 @@ function App() {
                   setSearch={setSearch}
                   darkMode={darkMode}
                 />
+                <SelectInput
+                  filter={filter}
+                  setFilter={setFilter}
+                  darkMode={darkMode}
+                />
               </FlitersWrapper>
               <CoutryGrid
                 countries={filteredCountries}
@@ -74,6 +89,12 @@ function App() {
 
 function useCountries() {
   const [countries, setCountries] = useState([]);
+
+  useEffect(() => {
+    ReactGA.initialize('UA-159941165-1');
+
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
 
   useEffect(() => {
     const fetchCountries = async () => {

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 const Wrapper = styled.div`
   height: 350px;
   border: ${props => props.darkMode ? '1px solid #415465' :'1px solid #eaeced'};
@@ -39,7 +40,10 @@ const ContryCard = ({flag, name, capital, population, region, code, darkMode}) =
 
   return (
     <Wrapper darkMode={darkMode}>
-      <Flag src={flag} alt={code}/>
+      <Flag
+        src={flag}
+        alt={name}
+      />
       <DescriptionBox>
         <h4>{name}</h4>
         <h6>Capital: <span>{capital ? capital : 'None'}</span></h6>
