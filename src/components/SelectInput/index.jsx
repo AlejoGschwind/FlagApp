@@ -2,27 +2,27 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Select = styled.select`
-  background: ${ props => props.darkMode ? '#415465' : '#fefefe'};
-  border: ${ props => props.darkMode ? '1px solid #415465' :'1px solid  #e0e0e0'};
+  background: ${ props => props.theme.secondary};
+  // border: 1px solid rgba(227, 227, 227, .6);
+  border: None;
   border-radius: 10px;
   height: 34px;
-  padding: 0 2em;
+  padding: 0 1em;
   font-size: 16px;
-  color: ${ props => !props.darkMode ? 'gray' : '#fefefe'};
+  color: ${ props => props.theme.fontColor};
 
   &:focus {
     outline: none;
   }
 `;
 
-const SelectInput = ({filter, setFilter, darkMode}) => (
+const SelectInput = ({filter, setFilter}) => (
   <Select
     name="region"
     value={filter}
     onChange={(e) => {
       setFilter(e.target.value);
     }}
-    darkMode={darkMode}
   >
     <option value="">Select region...</option>
     <option value="Africa">Africa</option>

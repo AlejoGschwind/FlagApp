@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   grid-row-gap: 2rem;
 `;
 
-const CoutryGrid = ({countries, darkMode}) => {
+const CoutryGrid = ({ countries }) => {
 
   return (
     <Wrapper>
@@ -24,7 +24,6 @@ const CoutryGrid = ({countries, darkMode}) => {
             population={country.population}
             region={country.region}
             code={country.alpha2Code}
-            darkMode={darkMode}
           />
         ))
       }

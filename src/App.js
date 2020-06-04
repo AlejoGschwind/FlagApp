@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactGA from 'react-ga';
 import styled from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import Header from './components/Header';
 import CoutryGrid from './components/CountryGrid';
 
@@ -9,10 +10,23 @@ import Spiner from './components/Spiner';
 import SearchInput from './components/SearchInput';
 import SelectInput from './components/SelectInput';
 
+const lightTheme = {
+  primary: 'white',
+  secondary: '#f4f4f4',
+  fontColor: '#344350'
+};
+
+const darkTheme = {
+  primary: '#344350',
+  secondary: '#415465',
+  fontColor: 'white'
+};
+
 const Wrapper = styled.div`
-  background: ${props => props.darkMode ? '#344350' : 'white'};
-  color: ${props => !props.darkMode ? '#415465' : 'white'};
+  background: ${props => props.theme.primary};
+  color: ${props => props.theme.fontColor};
   min-height: 100vh;
+  
 `;
 
 const Body = styled.div`
@@ -20,7 +34,6 @@ const Body = styled.div`
   width: 80vw;
   margin: auto;
   padding: 0 2em;
-
 `;
 
 const SpinerWrapper = styled.div`
@@ -54,39 +67,38 @@ function App() {
     .filter(country => country.name.toLowerCase().startsWith(search.toLowerCase()))
 
   return (
-    <Wrapper className="App" darkMode={darkMode}>
-      <Header
-        darkMode={darkMode}
-        setDarkMode={setDarkMode}
-      />
-      <Body>
-        {
-          countries.length === 0 ?
-            <SpinerWrapper>
-              <Spiner />
-            </SpinerWrapper>
-          :
-            <>
-              <FlitersWrapper>
-                <SearchInput
-                  search={search}
-                  setSearch={setSearch}
-                  darkMode={darkMode}
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <Wrapper className="App">
+        <Header
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+        />
+        <Body>
+          {
+            countries.length === 0 ?
+              <SpinerWrapper>
+                <Spiner />
+              </SpinerWrapper>
+            :
+              <>
+                <FlitersWrapper>
+                  <SearchInput
+                    search={search}
+                    setSearch={setSearch}
+                  />
+                  <SelectInput
+                    filter={filter}
+                    setFilter={setFilter}
+                  />
+                </FlitersWrapper>
+                <CoutryGrid
+                  countries={filteredCountries}
                 />
-                <SelectInput
-                  filter={filter}
-                  setFilter={setFilter}
-                  darkMode={darkMode}
-                />
-              </FlitersWrapper>
-              <CoutryGrid
-                countries={filteredCountries}
-                darkMode={darkMode}
-              />
-            </>
-        }
-      </Body>
-    </Wrapper>
+              </>
+          }
+        </Body>
+      </Wrapper>
+    </ThemeProvider>
   );
 };
 

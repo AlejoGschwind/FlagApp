@@ -4,14 +4,14 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   height: 350px;
-  border: ${props => props.darkMode ? '1px solid #415465' :'1px solid #eaeced'};
+  border: ${props => `1px solid ${props.theme.primary}`};
   -webkit-box-shadow: 17px 54px 161px -100px rgba(72,74,84,1);
   -moz-box-shadow: 17px 54px 161px -100px rgba(72,74,84,1);
   box-shadow: 17px 54px 161px -100px rgba(72,74,84,1);
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
-  background: ${props => props.darkMode ? '#415465' : 'white'};
+  background: ${props => props.theme.secondary};
 `;
 
 const Flag = styled.img`
@@ -36,10 +36,10 @@ const DescriptionBox = styled.div`
   }
 `;
 
-const ContryCard = ({flag, name, capital, population, region, code, darkMode}) => {
+const ContryCard = ({flag, name, capital, population, region}) => {
 
   return (
-    <Wrapper darkMode={darkMode}>
+    <Wrapper>
       <Flag
         src={flag}
         alt={name}

@@ -5,13 +5,13 @@ import { ReactComponent as MoonDarkIcon } from '../../icons/moon-dark.svg';
 
 
 const Wrapper = styled.header`
-  background: ${props => props.darkMode ? '#415465' : 'white'};
+  background: ${props => props.theme.secondary};
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2em;
-  border-bottom: ${props => props.darkMode ? '1px solid #415465' : '1px solid #ececec'};
+  border-bottom: ${props => `1px solid ${props.theme.secondary}`};
 `;
 
 const Logo = styled.h1`
@@ -42,7 +42,7 @@ const MoonLight = styled(MoonLightIcon)`
 
 const Header = ({darkMode, setDarkMode}) => {
   return (
-    <Wrapper darkMode={darkMode}>
+    <Wrapper>
       <Logo>
         Flag App
       </Logo>

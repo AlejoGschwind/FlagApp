@@ -2,15 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Input = styled.input`
-  background: ${ props => props.darkMode ? '#415465' : '#fefefe'};
-  border: ${ props => props.darkMode ? '1px solid #415465' :'1px solid  #e0e0e0'};
+  background: ${ props => props.theme.secondary};
+  // border: 1px solid rgba(227, 227, 227, .6);
+  border: None;
   height: 32px;
   border-radius: 10px;
-  padding: 0 2em;
+  padding: 0 1em;
   font-size: 16px;
-  color: ${ props => !props.darkMode ? '#415465' : '#fefefe'};
+  color: ${ props => props.theme.frontColor};
+  
   &::placeholder {
-    color: ${ props => !props.darkMode ? 'gray' : '#fefefe'};
+    color: ${ props => props.theme.fontColor};
   }
 
   &:focus {
@@ -18,13 +20,12 @@ const Input = styled.input`
   }
 `;
 
-const SearchInput = ({ search, setSearch, darkMode }) => (
+const SearchInput = ({ search, setSearch }) => (
   <Input
     placeholder="Search..."
     name="search"
     value={search}
     onChange={(e) => setSearch(e.target.value)}
-    darkMode={darkMode}
   />
 );
 
