@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/FlagApp/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/FlagApp/static/js/main.9126cc7a.chunk.js",
-    "main.js.map": "/FlagApp/static/js/main.9126cc7a.chunk.js.map",
+    "main.js": "/FlagApp/static/js/main.8c82353e.chunk.js",
+    "main.js.map": "/FlagApp/static/js/main.8c82353e.chunk.js.map",
     "runtime-main.js": "/FlagApp/static/js/runtime-main.d2980795.js",
     "runtime-main.js.map": "/FlagApp/static/js/runtime-main.d2980795.js.map",
-    "static/js/2.67680b37.chunk.js": "/FlagApp/static/js/2.67680b37.chunk.js",
-    "static/js/2.67680b37.chunk.js.map": "/FlagApp/static/js/2.67680b37.chunk.js.map",
+    "static/js/2.59e1a585.chunk.js": "/FlagApp/static/js/2.59e1a585.chunk.js",
+    "static/js/2.59e1a585.chunk.js.map": "/FlagApp/static/js/2.59e1a585.chunk.js.map",
     "index.html": "/FlagApp/index.html",
-    "precache-manifest.fdbbb2b39137df40dce9065e37f5d7c9.js": "/FlagApp/precache-manifest.fdbbb2b39137df40dce9065e37f5d7c9.js",
+    "precache-manifest.3c9ed3a9da6a66dc6e501910359da11e.js": "/FlagApp/precache-manifest.3c9ed3a9da6a66dc6e501910359da11e.js",
     "service-worker.js": "/FlagApp/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/FlagApp/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.67680b37.chunk.js.LICENSE.txt": "/FlagApp/static/js/2.67680b37.chunk.js.LICENSE.txt",
+    "static/js/2.59e1a585.chunk.js.LICENSE.txt": "/FlagApp/static/js/2.59e1a585.chunk.js.LICENSE.txt",
     "static/media/moon-dark.39b498bf.svg": "/FlagApp/static/media/moon-dark.39b498bf.svg",
     "static/media/moon-light.7dd9cc71.svg": "/FlagApp/static/media/moon-light.7dd9cc71.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d2980795.js",
-    "static/js/2.67680b37.chunk.js",
+    "static/js/2.59e1a585.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.9126cc7a.chunk.js"
+    "static/js/main.8c82353e.chunk.js"
   ]
 }
