@@ -24,7 +24,7 @@ const SelectInput = ({filter, setFilter, darkMode}) => (
     }}
     darkMode={darkMode}
   >
-    <option value="">Select a region</option>
+    <option value="">Select region...</option>
     <option value="Africa">Africa</option>
     <option value="Americas">Americas</option>
     <option value="Asia">Asia</option>

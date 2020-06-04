@@ -20,6 +20,7 @@ const Body = styled.div`
   width: 80vw;
   margin: auto;
   padding: 0 2em;
+
 `;
 
 const SpinerWrapper = styled.div`
@@ -31,12 +32,14 @@ const SpinerWrapper = styled.div`
 
 const FlitersWrapper = styled.div`
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 1em 0;
   height: 80px;
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
+    align-items: initial;
   }
 `;
 

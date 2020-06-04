@@ -3,13 +3,14 @@ import styled from 'styled-components';
 import { ReactComponent as MoonLightIcon } from '../../icons/moon-light.svg';
 import { ReactComponent as MoonDarkIcon } from '../../icons/moon-dark.svg';
 
+
 const Wrapper = styled.header`
   background: ${props => props.darkMode ? '#415465' : 'white'};
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 2em;
   border-bottom: ${props => props.darkMode ? '1px solid #415465' : '1px solid #ececec'};
 `;
 
@@ -52,7 +53,7 @@ const Header = ({darkMode, setDarkMode}) => {
           :
             <MoonDark />
         }
-        Dark Mode
+        {darkMode ? 'Light' : 'Dark'} Mode
       </DarkMode>
     </Wrapper>
   )
