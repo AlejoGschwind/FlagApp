@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/FlagApp/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/FlagApp/static/js/main.59d49b47.chunk.js",
-    "main.js.map": "/FlagApp/static/js/main.59d49b47.chunk.js.map",
+    "main.js": "/FlagApp/static/js/main.faabb62f.chunk.js",
+    "main.js.map": "/FlagApp/static/js/main.faabb62f.chunk.js.map",
     "runtime-main.js": "/FlagApp/static/js/runtime-main.d2980795.js",
     "runtime-main.js.map": "/FlagApp/static/js/runtime-main.d2980795.js.map",
     "static/js/2.67680b37.chunk.js": "/FlagApp/static/js/2.67680b37.chunk.js",
     "static/js/2.67680b37.chunk.js.map": "/FlagApp/static/js/2.67680b37.chunk.js.map",
     "index.html": "/FlagApp/index.html",
-    "precache-manifest.3655a11eea5ef3b58a20ddf48fc38461.js": "/FlagApp/precache-manifest.3655a11eea5ef3b58a20ddf48fc38461.js",
+    "precache-manifest.2866821f9b41348f624e5b470541d807.js": "/FlagApp/precache-manifest.2866821f9b41348f624e5b470541d807.js",
     "service-worker.js": "/FlagApp/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/FlagApp/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.67680b37.chunk.js.LICENSE.txt": "/FlagApp/static/js/2.67680b37.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.d2980795.js",
     "static/js/2.67680b37.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.59d49b47.chunk.js"
+    "static/js/main.faabb62f.chunk.js"
   ]
 }
